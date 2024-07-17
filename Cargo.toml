@@ -1,0 +1,23 @@
+[package]
+name = "serde_repr_base64"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mincong Lu <mintlux667@gmail.com>"]
+license = "MIT OR Apache-2.0"
+
+readme = "README.md"
+repository = "https://github.com/mintlu8/serde_repr_base64"
+description = """
+A #[serde(with = "base64")] adaptor for base64 and bytemuck.
+"""
+keywords = ["serde", "base64"]
+
+[dependencies]
+base64 = "0.22.1"
+bytemuck = "1.16.1"
+serde = "1.0.204"
+
+[dev-dependencies]
+postcard = { version = "1.0.8", features = ["alloc"] }
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = "1.0.120"
